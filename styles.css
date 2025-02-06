@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: blanchedalmond;
+}
+
+.game-container {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.color-box {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  border: 2px solid #ccc;
+}
+
+.color-options {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.color-option {
+  width: 60px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#newGameButton {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#newGameButton:hover {
+  background-color: #45a049;
+}
+
+#gameStatus {
+  font-size: 1.2em;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#score {
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+/* MEDIA QUARY  */
+@media (max-width: 600px) {
+  /* .color-options {
+    flex-direction: column;
+  } */
+  .color-option {
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+  }
+}
